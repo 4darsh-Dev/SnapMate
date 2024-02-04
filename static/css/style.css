@@ -100,16 +100,21 @@
     font-family: var(--mono);
     font-size: 80%;
     padding: 1rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+
+    
   }
 
   #navbar {
     font-size: var(--base-font-size);
-    position: fixed;
-    top: 0;
-    background-color: var(--light-color);
+    
+    background-color: var(--primary-color);
     width: 100%;
-    z-index: 10;
-    box-shadow: 0 0 25px gray;
+ 
+    box-shadow: 0 0 6px gray;
 
   }
 
@@ -154,9 +159,15 @@
     display: inline-block;
 
   }
+  .logo-img{
+    width: auto;
+    height: 60px;
+    border-radius: 50%;
+
+  }
 
   .logo h1 a {
-    color: var(--black);
+    color: var(--light-color);
     font-family: var(--mono);
     text-decoration: none;
   }
@@ -203,7 +214,7 @@
 
   .menu-list li a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--light-color);
     display: block;
     font-weight: 600;
   }
@@ -303,7 +314,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/static/img/nyaySarathiHome.webp);
+    background-image: url(/static/img/couple-walk.gif);
     background-size: contain;
     /* z-index: 999; */
     background-repeat: no-repeat;
