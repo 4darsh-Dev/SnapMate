@@ -1,0 +1,115 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SnapMate | Your Customized Love Proposal!">
+    <meta name="keywords" content="SnapMate, love Proposal online maker, valentine online proposal maker, valentine propose online website, propose online, custom proposal ">
+    <meta name="author" content="Adarsh Maurya - Web developer, Programmer, Blogger, adarshmaurya.onionreads.com, adarsh-maurya-dev, 4darsh-Dev">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="SnapMate - Your Customized Love Proposal!">
+    <meta property="og:description" content="Your Customized Love Proposal.">
+    <meta property="og:image" content="{% static 'img/law-hammer.svg' %}">
+    <meta property="og:url" content="http://SnapMate.co/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SnapMate - Your Customized Love Proposal!">
+    <meta name="twitter:description" content="Your Customized Love Proposal.">
+    <meta name="twitter:image" content="{% static 'img/law-hammer.svg' %}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+    <title>SnapMate | {% block title %}{% endblock title %}</title>
+
+    {% block head %}
+    <!-- Additional head elements go here -->
+    {% endblock head %}
+
+</head>
+
+
+<body>
+    <div id="preloader">
+    </div>
+
+    <header>
+        <section id="navbar">
+
+            <nav>
+                <input type="checkbox" id="check">
+            <label id="check-label" for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+               
+            </label>
+                <div class="logo">
+                    <h1><a href="/"><img class="logo-img" src="{% static 'img/law-hammer.svg' %}" 
+                        alt="SnapMate - Your Customized Love Proposal online"><span> SnapMate </span></a>
+                <h1>
+                </div>
+                <ul class=" menu-list">
+                    
+                    <li> <a class="menu-items" href="/">Home</a> </li>
+
+                    <li> <a class="menu-items" href="/about">About</a> </li>
+                    <li> <a class="menu-items" href="/services">Services</a> </li>
+                    <li> <a class="menu-items" href="/contact">Contact</a></li>
+                    
+                    <li> <a  class="menu-items" href="/login">Login</a></li>
+                    <li> <a class="nav-btn" id="nav-signup" href="/signup">Sign Up</a></li>
+
+
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <main>
+        {% block main %}
+        {% endblock main %}
+    </main>
+
+    
+
+    <footer>
+        <div class="last-new">
+
+            <p>Get access to exclusive update...</p>
+
+            <div class="subscription-box">
+                <input id="subscription" placeholder="youremail.com" type="email">
+                <a target="_blank" href="mailto:adarsh@onionreads.com">Subscribe</a>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="last-text ">
+
+            <p class="font-ss">Made with <i id="heart" class=' bx bxs-heart'></i> Love in <span><a
+                        class="ad-link" target="_blank" href="https://adarshmaurya.onionreads.com/">India</a></span> &copy; 2024
+            </p>
+        </div>
+    </footer>
+
+    {% block script %}
+    
+    {% endblock script %}
+
+
+
+</body>
+
+</html>
