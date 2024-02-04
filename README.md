@@ -1,4 +1,4 @@
-# SnapMate
+# 🔥SnapMate💖💖
 
 
 ## Overview
@@ -8,6 +8,8 @@ Welcome to SnapMate, the ultimate proposal platform blending technology and roma
 <!-- <p align="center">
   <img src="https://onionreads.com/wp-content/uploads/2024/01/Screenshot-2024-01-15-014420.png" alt="SnapMate" width="600px" />
 </p> -->
+
+## Badges📛
 
 ![GitHub code size](https://img.shields.io/github/languages/code-size/4darsh-Dev/SnapMate?style=plastic)
 ![GitHub contributors](https://img.shields.io/github/contributors/4darsh-Dev/SnapMate?style=plastic)
@@ -47,60 +49,18 @@ Welcome to SnapMate, the ultimate proposal platform blending technology and roma
 </p> -->
 
 
-## Project Setup Locally 🚀
-
-
-### Setting up Django API
-
-1. clone the git repository locally.
-```bash 
-git clone https://github.com/4darsh-Dev/SnapMate.git
-```
-2. Install python and setup virtual envionment. 
-#### 1. Open terminallear in SnapMate folder
-```bash 
-pip install virtualenv 
-```
-```bash 
-cd SnapMate
-```
-```bash 
-python -m venv myenv 
-```
-#### Activating virtual environment named as myenv
-##### 1. In Windows 🪟
-```bash 
-.\myenv\Scripts\activate  
-```
-##### 2. In Linux/Mac 🐧
-```bash
- source myenv/bin/activate
- ```
-
-3. Installing required modules and libraries
-```bash
- pip install -r requirements.txt 
- ```
-
-4. Running Django Development Server
-```bash 
-python manage.py makemigrations 
-```
-```bash 
-python manage.py migrate 
-```
-```bash 
-python manage.py runserver 
-```
--- Server will be started at localhost (example: http://127.0.0.1:8000/)
 
 ## Tech Stack 🛠️
 
 - **Web FrontEnd:** HTML, CSS, JavaScript 
-- **Web BackEnd :** Backend for SnapMate
-- **ML Model:** For Generating customized web page and images.
+- **Web BackEnd :** Django, Sqlite3 and Python
+- **ML Model:** For Generating customized web page and images.(pyTorch, Transformers)
 
 ## Features 🌐🔍
+- A unique web page for proposing your Loved Ones.
+- Various Images of your partner with their favorite music.
+- Fabulous Ui/ux design for awesome romantic feel.
+
 
 ## Screenshots 📸
 
@@ -117,61 +77,19 @@ Detailed documentation on usage, contribution guidelines, and API integration ca
 - [@DharmeshTanwar56 (Dharmesh Tanwar)](https://github.com/DharmeshTanwar56)
 
 
+## Roadmap🗺️
+- Making website frontend using html,css and vanilla JS.
+- Setting up Backed with Django with inital configuration.
+- Login and SignUp Auth System 
+- Email-Auth automatic setup
+- 
+- Setting up ML model for Image Generation.
+- Custom web page with Music and Image generation for proposal with unique public URL.
+- Confirming the request.
+- Deploying the final project on web host platforms with sitemap and SEO files
+- Beta-Testing phase
+- ...coming soon
 
-## Contributing Guidelines 🤝🚀
-
-
-Thank you for considering contributing to SnapMate! We welcome your help in making this project even better.
-
-Here are the key points to guide your contributions:
-
-- **Fork the Repository:** Start by forking the SnapMate repository to your own GitHub account. 🍴
-
-- **Clone the Repository:** Clone the forked repository to your local machine using . 💻
-```bash
-git clone https://github.com/4darsh-Dev/SnapMate/ 
-```
-
-- **Create a Branch:** Create a branch for your contributions using a descriptive branch name. 🌿
-
-- **Make Changes:** Implement your changes or additions, ensuring they align with the project's goals. 🚀
-
-- **Testing:** Test your changes thoroughly to ensure functionality and prevent regressions. ✔️
-
-- **Commit Changes:** Commit your changes with clear, concise messages. 💬
-
-- **Create Pull Request:** Push your changes to your forked repository and create a Pull Request (PR) to the main SnapMate repository. 🎉
-
-- **Follow Code Standards:** Adhere to coding standards and guidelines defined in the project. 📋
-
-- **Provide Detailed PR Description:** Clearly explain the purpose and impact of your PR. 📝
-
-- **Participate in Discussions:** Engage in discussions related to your PR and address feedback promptly. 💬
-
-By following these guidelines, you contribute to the growth and improvement of SnapMate. Thank you for your valuable contributions! 🚀
-
-
-
-## Code of Conduct 🧑‍💼
-
-Familiarize yourself with the project's code of conduct to ensure a positive and inclusive community.
-- **Welcome to the SnapMate Community!** 🚀
-- **Values:** Prioritize inclusivity, respect, collaboration, open-mindedness, and transparency. 🌟
-- **Expected Behavior:** Embrace positive language, constructive criticism, and acknowledgment of efforts. Adhere to guidelines and maintain a respectful tone. 🌈
-- **Unacceptable Behavior:** Prohibit harassment, trolling, personal attacks, and privacy violations. 🚫
-- **Reporting:** Promptly report violations. Investigation includes warnings or removal from the community. 🛡️
-- **Conclusion:** We aim to create a space where everyone feels welcome, valued, and respected. Join us in fostering a positive and collaborative community! 🙌
-
-
-## Acknowledgments 🙏
-
-We express our gratitude to the incredible individuals who have contributed to the development and success of SnapMate. 🌟 Your dedication, passion, and insights have played a pivotal role in shaping this project.
-
-Special thanks to the open-source community for their continuous support and collaborative spirit. 🚀 Your contributions, whether big or small, have contributed to the growth and improvement of SnapMate.
-
-We appreciate the efforts of each tester, developer, and community member who has devoted time and expertise to make SnapMate a valuable tool.
-
-Thank you for being part of our journey and contributing to a transparent and user-centric online environment. 🌐 Your involvement is crucial to the success of SnapMate!
 
 ## Feedback 📬
 
