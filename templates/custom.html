@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %}Custom Page Design{% endblock title %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+{% endblock head %}
+
+{% block main %}
+    <h1>Design custom web page for your online proposal</h1>
+
+{% endblock %}
+
+{% block script %}
+
+<script src="{% static 'js/custom.js' %}"> </script>
+
+{% endblock script %}
