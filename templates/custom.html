@@ -6,16 +6,110 @@
 {% block head %}
     
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
-
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 {% endblock head %}
 
 {% block main %}
     <h1>Design custom web page for your online proposal</h1>
+    <section id="home" class="home">
+        <div class="container">
 
+            {% if user.is_authenticated  %}
+            <div class="user-intro"><b>Welcome, <span>{{user.username}}</span>  </b> <a href="/logout">Logout</a></div>
+            
+            {% else %}
+                <div class="user-intro"><b>You are not Logged In? Login or Regsiter! </b></div>
+            {% endif %}
+    
+    
+        {% if error_message %}
+        <div  id="error-message" class="error-message">
+            <p> {{ error_message }} </p>
+            <div id="cross-btn" class="cross-btn">
+                <i class='bx bx-x '></i>
+            </div>
+        </div>
+    
+    
+        {% endif %}
+    
+        <div id="cross-btn"></div>
+
+        <!-- <div class="contact-fm">
+
+            <div class="phone-img-box">
+                <img src="{% static 'img/phone-img.webp' %}" alt="Contact Image NyaySarathi | Guide to simpler laws, vidura chatbot online legal help">
+            </div>
+    
+            <div class="sub-c">
+    
+                <div class="sub-c-1">
+                    <h1 class="head">Contact Form</h1>
+                    <div class="form">
+                        <form id="my-form" method="post" action="/contact/">
+                            {% csrf_token %}
+    
+                            <div class="form-c-1">
+                                <label class="sub-head" for="name">
+                                    Name
+                                </label>
+    
+                                <i class='bx bxs-user input-img'></i>
+                                <input class="form-f" id="name" required
+                                    placeholder="Your Name" name="name" type="text">
+    
+                            </div>
+                            <div class="form-c-1">
+                                <label class="sub-head" for="email">
+                                    Email
+                                </label>
+    
+                                <i class='bx bxs-envelope input-img'></i>
+                                <input class="form-f" name="email" id="email" required
+                                    placeholder="example@gmail.com" type="email">
+    
+                            </div>
+                            <div class="form-c-1">
+                                <label class="sub-head" for="phone-number">
+                                    Phone
+                                </label>
+    
+                                <i class='bx bxs-phone input-img' ></i>
+                                <input class="form-f" name="phone" id="phone-number"
+                                    placeholder="+91-012345xxxx" type="text">
+    
+                            </div>
+                            <div class="form-c-1">
+                                <label class="sub-head" for="description">
+                                    Description
+                                </label>
+                                <textarea class="form-f" name="description" required placeholder="How can we help you?" name="description"  id="description" cols="30" rows="10"></textarea>
+    
+                            </div>
+    
+                            <div style="font-family: sans-serif;font-size: 16px;" class="sign-up">
+                                We do not share your credentials with anyone else.
+                            </div>
+    
+                        <button type="submit" id="submit-btn" class="submit-btn">SUBMIT</button>
+    
+                    </div>
+                    
+                </div>
+            </div>
+        </div> -->
+
+        {{ form.as_p }}
+
+
+
+    </section>
 {% endblock %}
 
 {% block script %}
 
 <script src="{% static 'js/custom.js' %}"> </script>
+<script src="{% static 'js/script.js' %}"> </script>
 
 {% endblock script %}
