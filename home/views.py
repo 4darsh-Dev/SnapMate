@@ -25,7 +25,7 @@ def loginUser(request):
             #A backend authenticated the credentials
             login(request, user)
      
-            return redirect('/vidura') 
+            return redirect('/custom') 
 
         else:
             # No backend authenticated the credentials
@@ -87,7 +87,7 @@ def signupUser(request):
         myuser.save()
         success_msg = "Your NyaySarathi account created Successfully!"
         messages.success(request, success_msg )
-        return render(request, 'vidura.html', {"error_message" : success_msg})
+        return render(request, 'custom.html', {"error_message" : success_msg})
 
 
     # else:
@@ -95,6 +95,10 @@ def signupUser(request):
 
 
     return render(request, 'signup.html')
+
+def custom(request):
+    return render(request, 'custom.html')
+
 
 
 def logoutUser(request):
