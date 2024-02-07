@@ -6,9 +6,7 @@
 .mainContainer{
     width:100%;
     height: auto;
-    margin: 5.2rem 0;
-
-
+ 
 }
 .mc-div{
     width:calc(100%-80px);
@@ -40,7 +38,7 @@
 
 }
 .error-message p{
-    color: var(--deep-pink);
+    color: var(--primary-color);
     font-size: 16px;
     font-family: var(--sans);
     padding:12px;
@@ -130,11 +128,11 @@
 
 .login-btn{
     width: 340px;
-    background-color:var(--deep-pink);
+    background-color:var(--primary-color);
     height: 40px;
     color: white;
     font-weight: 600;
-    border: 2px solid var(--deep-pink);
+    border: 2px solid var(--primary-color);
     border-radius: 25px;
     position: relative;
     top: 25px;
@@ -142,8 +140,8 @@
 }
 .login-btn:hover{
     cursor: pointer;
-    background-color: var(--deep-pink);
-    box-shadow: 0 0 25px var(--deep-pink);
+    background-color: var(--primary-color);
+    box-shadow: 0 0 25px var(--primary-color);
 }
 .sign-up{
     width:  100%;

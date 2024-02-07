@@ -851,7 +851,7 @@
   .top i {
     color: #000000;
     /* background: #0ef; */
-    background-color: var(--deep-pink);
+    background-color: var(--primary-color);
     font-size: 25px;
     padding: 10px;
     border-radius: 50%;

@@ -14,4 +14,4 @@ setTimeout(() => {
     
     preloadoer.style.display = "none";
 
-}, 3000);
+}, 30);
